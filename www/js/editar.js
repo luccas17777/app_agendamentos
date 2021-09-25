@@ -16,7 +16,7 @@ var app = {
         var getTelefone = url.searchParams.get("telefone");
 
         var db = firebase.firestore();
-        var ag = db.collection("agendamentos").where("telefone", "==", getTelefone);
+        var ag = db.collection("cadastro").where("telefone", "==", getTelefone);
 
         ag.get()
         .then((querySnapshot) => {
@@ -46,12 +46,12 @@ var app = {
         let cobservacao = document.getElementById("txtObservacao").value;
 
         var db = firebase.firestore();
-        var ag = db.collection("agendamentos").where("telefone", "==", getTelefone);
+        var ag = db.collection("cadastro").where("telefone", "==", getTelefone);
 
         ag.get()
         .then((querySnapshot) => {
             querySnapshot.forEach((doc) => {
-                var dados = db.collection("agendamentos").doc(doc.id);
+                var dados = db.collection("cadastro").doc(doc.id);
 
                 return dados.update({
                     nome: cnome,

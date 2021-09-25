@@ -1,13 +1,13 @@
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 var firebaseConfig = {
-	apiKey: "AIzaSyBmRn1YF2O-Z8r1ryyJ1R_KPAH3exnWxPo",
-    authDomain: "cordova-app-1bf1d.firebaseapp.com",
-    projectId: "cordova-app-1bf1d",
-    storageBucket: "cordova-app-1bf1d.appspot.com",
-    messagingSenderId: "423392315250",
-    appId: "1:423392315250:web:3fa9a0e3a679c7ec797feb",
-    measurementId: "G-V2X12V51S1"
+	apiKey: "AIzaSyBh8UvnDbj9uoph98xBQgLtp_ejviVumf0",
+    authDomain: "testeaula-417e3.firebaseapp.com",
+    projectId: "testeaula-417e3",
+    storageBucket: "testeaula-417e3.appspot.com",
+    messagingSenderId: "742476696416",
+    appId: "1:742476696416:web:240b4b89a11fe8e9ebec05",
+    measurementId: "G-6X3FPDP0K9"
  };
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
