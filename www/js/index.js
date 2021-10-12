@@ -18,7 +18,7 @@ var app = {
 
         var db = firebase.firestore();
 
-		db.collection("agendamentos").add({
+		db.collection("cadastro").add({
     		nome: cnome,
     		telefone: ctelefone,
     		origem: corigem,

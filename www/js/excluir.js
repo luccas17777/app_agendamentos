@@ -16,7 +16,7 @@ var app = {
         var getTelefone = url.searchParams.get("telefone");
 
         var db = firebase.firestore();
-        var ag = db.collection("agendamentos").where("telefone", "==", getTelefone);
+        var ag = db.collection("cadastro").where("telefone", "==", getTelefone);
 
         ag.get()
         .then((querySnapshot) => {
@@ -40,7 +40,7 @@ var app = {
         var getTelefone = url.searchParams.get("telefone");
 
         var db = firebase.firestore();
-        var ag = db.collection("agendamentos").where("telefone", "==", getTelefone);
+        var ag = db.collection("cadastro").where("telefone", "==", getTelefone);
 
         navigator.notification.confirm(
             'Deseja realmente excluir esse registro?',  // message
@@ -55,7 +55,7 @@ var app = {
                 ag.get()
                 .then((querySnapshot) => {
                     querySnapshot.forEach((doc) => {
-                        db.collection("agendamentos").doc(doc.id).delete().then(() => {
+                        db.collection("cadastro").doc(doc.id).delete().then(() => {
                             console.log("Document successfully deleted!");
                             window.location.href = cordova.file.applicationDirectory + "www/consultarClientes.html";
                         }).catch((error) => {
